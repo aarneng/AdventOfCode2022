@@ -16,14 +16,10 @@ func main() {
 
 	// ------- <preprocessing> ---------- //
 
-	d, err := os.Open("data.txt")
+	d, err := os.ReadFile("data.txt")
 	check(err)
 
-	defer d.Close()
-
-	fmt.Println(d)
-
-	// data := strings.Split(string(d), "\r\n")
+	data := strings.Split(string(d), "\r\n")
 
 	// ------- </preprocessing> ---------- //
 
