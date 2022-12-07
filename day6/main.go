@@ -33,7 +33,7 @@ func main() {
 
 	windowLength := 14    // <--- change this to 4 if you want part 1, 14 for part 2
 	pointValues := map[rune]int{}
-
+	
 	for _, c := range data[:windowLength] {
 		pointValues[c]++
 	}
